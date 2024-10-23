@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dynamic Card Details</title>
+  <script src="https://kit.fontawesome.com/484c6500c6.js" crossorigin="anonymous"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body class="bg-light">
+
+
+  <div class="container mt-5">
+    <h2 class="text-center mb-4">View our Featured Speakers for the Event</h2>
+    <p class="text-center mb-5">Speakers are core contributors and industry thought leaders working at companies that push for innovation.</p>
+
+ 
+    <div id="detailsSection" class="details-section">
+      <div style="display: flex">
+        <div class="details-header">
+        <img id="detailsImg" src="" alt="Speaker">
+        <div>
+          <h5 id="detailsName"></h5>
+          <p id="detailsPosition" class="mb-0"></p>
+          <p id="detailsCompany" class="text-muted"></p>
+          <div class="details-icons">
+            <i class="fa-brands fa-dribbble"></i>
+            <i class="fa-brands fa-x-twitter"></i>
+            <i class="fa-brands fa-linkedin"></i>
+          </div>
+        </div>
+      </div>
+      <p id="detailsBio" class="details-bio"></p>
+      </div>
+      <div class="close-btn" id="closeBtn">&times;</div>
+    </div>
+
+ 
+    <div class="position-relative">
+
+      <div class="card-container">
+        <div id="slider" class="slider-container">
+
+        </div>
+      </div>
+
+  
+      <button id="prev" class="btn btn-outline-secondary position-absolute top-50 start-0 translate-middle-y">‹</button>
+      <button id="next" class="btn btn-outline-secondary position-absolute top-50 end-0 translate-middle-y">›</button>
+    </div>
+
+
+    <div class="text-center mt-5">
+      <a href="#" class="btn btn-primary">See the Program</a>
+    </div>
+  </div>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://unpkg.com/@popperjs/core@2"></script>
+  <script src="./script.js"></script>
+</body>
+</html>
