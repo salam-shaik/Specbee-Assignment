@@ -12,6 +12,7 @@
     max-width: 15rem;
     margin: 0 0.5rem;
     cursor: pointer;
+    border: 1px solid #0000000d;
   }
   .details-section {
     display: none;
